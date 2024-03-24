@@ -15,6 +15,27 @@ namespace LeetCode
             this.val = val;
             this.next = next;
         }
+        public void Insert(int newValue)
+        {
+            ListNode newNode = new ListNode(newValue);
+
+            // Nếu danh sách liên kết rỗng, gán nút mới làm nút gốc
+            if (this.next == null )
+            {
+                this.next = newNode;
+            }
+            else
+            {
+                ListNode current = this.next;
+                // Duyệt đến nút cuối cùng của danh sách liên kết
+                while (current.next != null)
+                {
+                    current = current.next;
+                }
+                // Chèn nút mới vào sau nút cuối cùng
+                current.next = newNode;
+            }
+        }
     }
     public class MergeTwoSortedLists
     {
