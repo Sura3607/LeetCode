@@ -26,7 +26,7 @@ namespace LeetCode
             int k = check.Count;
             return k;
         }
-        public int RemoveDuplicates(int[] nums)
+        public int RemoveDuplicates(ref int[] nums)
         {
             int j = 1;
             for (int i = 1; i < nums.Length; i++)
