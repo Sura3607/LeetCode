@@ -13,15 +13,8 @@ namespace LeetCode
             //Test_ValidParentheses();
             //Test_MergeSortedArray();
             //Test_MergeTwoSortedLists();
-
-            int[] a = { 0, 1, 2, 2, 3, 0, 4, 2 };
-            int val = 2;
-            Remove_Element re = new Remove_Element();          
-            Console.WriteLine(re.RemoveElement_test2(ref a, val));
-            for (int i = 0; i < a.Length; i++)
-            {
-                Console.Write(a[i] + " ");
-            }
+            //Test_removeElement();
+            
             Console.ReadLine();
         }
         static void Test_ValidParentheses()
@@ -84,6 +77,17 @@ namespace LeetCode
                 mergedList = mergedList.next;
             }
             Console.WriteLine();
+        }
+        static void Test_removeElement()
+        {
+            int[] a = { 0, 1, 2, 2, 3, 0, 4, 2 };
+            int val = 2;
+            Remove_Element re = new Remove_Element();
+            Console.WriteLine(re.RemoveElement_test2(ref a, val));
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write(a[i] + " ");
+            }
         }
     }
 }

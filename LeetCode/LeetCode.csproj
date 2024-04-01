@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindtheIndexoftheFirstOccurrenceinaString.cs" />
     <Compile Include="MergeSortedArray.cs" />
     <Compile Include="MergeTwoSortedLists.cs" />
     <Compile Include="Program.cs" />
