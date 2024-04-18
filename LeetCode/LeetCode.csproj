@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FindtheIndexoftheFirstOccurrenceinaString.cs" />
+    <Compile Include="LengthOfLastWord.cs" />
     <Compile Include="MergeSortedArray.cs" />
     <Compile Include="MergeTwoSortedLists.cs" />
     <Compile Include="Program.cs" />
